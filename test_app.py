@@ -47,8 +47,8 @@ def main():
     
     # 7. Check anxiety
     print("\n6. Checking anxiety...")
-    anxiety = k.anxiety()
-    print(f"   Overall: {anxiety['overall']['level']} ({anxiety['overall']['score']}/100)")
+    anxiety = k.get_anxiety_report()
+    print(f"   Overall: {anxiety['overall_level']} ({anxiety['overall_score']}/100)")
     
     print("\n=== Test Complete ===")
 
