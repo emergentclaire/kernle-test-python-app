@@ -45,9 +45,9 @@ def main():
     k.checkpoint("Python app test complete")
     print("   Checkpoint saved")
     
-    # 7. Check anxiety
+    # 7. Check anxiety (using new simpler API)
     print("\n6. Checking anxiety...")
-    anxiety = k.get_anxiety_report()
+    anxiety = k.anxiety()  # Now works! (alias for get_anxiety_report)
     print(f"   Overall: {anxiety['overall_level']} ({anxiety['overall_score']}/100)")
     
     print("\n=== Test Complete ===")
